@@ -13,7 +13,7 @@ COPY backend/requirements.txt /app/backend/requirements.txt
 RUN pip install --no-cache-dir -r /app/backend/requirements.txt
 
 # Copy backend code
-COPY backend/ /app/backend/
+COPY . /app/backend
 
 # Create storage and cache directories
 ENV UPLOAD_DIR=/data/uploads
